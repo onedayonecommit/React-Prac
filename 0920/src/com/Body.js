@@ -19,6 +19,7 @@ const Body = (props) => {
             {props.item && props.item.id ? <div>{props.item.id}번</div> : null}
             {props.item && props.item.num ? <div>{props.item.num}번</div> : null}
             {props.item && props.item.name ? <div>{props.item.name}번</div> : null}
+            {props.islogin ? <div>로그인되었음</div> : <div>not login</div>}
         </div>
     )
 }
