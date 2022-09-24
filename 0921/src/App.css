@@ -1,0 +1,20 @@
+.Nav {
+  background-color: black;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.nav-img {
+  width: 15px;
+  height: 15px;
+}
