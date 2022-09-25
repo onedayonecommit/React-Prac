@@ -1,13 +1,11 @@
 import React from 'react'
 import { Nav } from '../com'
-
-const Main = (props) => {
+const StoreAirpods = () => {
     return (
         <div>
             <Nav />
-
-        </div>
+            StoreAirpods</div>
     )
 }
 
-export default Main
+export default StoreAirpods

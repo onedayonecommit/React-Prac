@@ -1,13 +1,12 @@
 import React from 'react'
 import { Nav } from '../com'
 
-const Main = (props) => {
+const StoreMac = () => {
     return (
         <div>
             <Nav />
-
-        </div>
+            StoreMac</div>
     )
 }
 
-export default Main
+export default StoreMac

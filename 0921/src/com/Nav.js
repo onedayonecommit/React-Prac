@@ -3,20 +3,19 @@ import React from 'react'
 function Nav() {
     return (
         <div className='navigation'>
-            <div className='loggo nav-item'>🍎</div>
-            <div className='nav-item'>스토어</div>
-            <div className='nav-item'>Mac</div>
-            <div className='nav-item'>iPad</div>
-            <div className='nav-item'>iPhone</div>
-            <div className='nav-item'>Watch</div>
-            <div className='nav-item'>Airpods</div>
-            <div className='nav-item'>Tv 및 홈</div>
-            <div className='nav-item'>Apple 독점 제공</div>
-            <div className='nav-item'>액세서리</div>
-            <div className='nav-item'>고객지원</div>
-            <div className='nav-item'>고객지원</div>
-            <div className='nav-item'><img src={require("../image/dot2.png")} className='nav-img' /></div>
-            <div className='nav-item'><img src={require("../image/bag.png")} className='nav-img' /></div>
+            <a href='/' className='nav-item loggo'><div className='lo n'>🍎</div></a>
+            <a href='/store' className='nav-item'><div className='n'>스토어</div></a>
+            <a href='/store/Mac' className='nav-item'><div className='n'>Mac</div></a>
+            <a href='/store/iPad' className='nav-item'><div className='n'>iPad</div></a>
+            <a href='/store/iPhone' className='nav-item'><div className='n'>iPhone</div></a>
+            <a href='/store/Watch' className='nav-item'><div className='n'>Watch</div></a>
+            <a href='/store/Airpods' className='nav-item'><div className='n'>Airpods</div></a>
+            <a href='/store/TV' className='nav-item'><div className='n'>TV 및 홈</div></a>
+            <a href='/dokjum' className='nav-item'><div className='n'>Apple 독점 제공</div></a>
+            <a href='/store/accessory' className='nav-item'><div className='n'>액세서리</div></a>
+            <a href='/kogaekjiwon' className='nav-item'><div className='n'>고객지원</div></a>
+            <a href='/dodbogi' className='nav-item'><div className='n'><img src={require("../image/dot2.png")} className='nav-img' /></div></a>
+            <a href='/jangbaguni' className='nav-item'><div className='n'><img src={require("../image/bag.png")} className='nav-img' /></div></a>
         </div>
     )
 }

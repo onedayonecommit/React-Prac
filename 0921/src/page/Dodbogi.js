@@ -1,13 +1,12 @@
 import React from 'react'
 import { Nav } from '../com'
 
-const Main = (props) => {
+const Dodbogi = () => {
     return (
         <div>
             <Nav />
-
-        </div>
+            Dodbogi</div>
     )
 }
 
-export default Main
+export default Dodbogi
