@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { Dodbogi, Dokjum, Janbaguni, Kogaekjiwon, Main, Store, StoreAccessory, StoreAirpods, StoreiPad, StoreiPhone, StoreMac, StoreTV, StoreWatch } from './page';
+import { Dodbogi, Dokjum, Janbaguni, Kogaekjiwon, Main, Signin, Store, StoreAccessory, StoreAirpods, StoreiPad, StoreiPhone, StoreMac, StoreTV, StoreWatch } from './page';
 import { useState } from 'react';
 function App() {
   const [login, Loginch] = useState(false);
@@ -23,6 +23,7 @@ function App() {
         <Route path='/dodbogi' element={<Dodbogi />} />
         <Route path='/jangbaguni' element={<Janbaguni />} />
         <Route path='/dokjum' element={<Dokjum />} />
+        <Route path='/login' element={<Signin />} />
       </Routes>
     </div>
   );

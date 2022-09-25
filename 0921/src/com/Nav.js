@@ -16,6 +16,7 @@ function Nav() {
             <a href='/kogaekjiwon' className='nav-item'><div className='n'>고객지원</div></a>
             <a href='/dodbogi' className='nav-item'><div className='n'><img src={require("../image/dot2.png")} className='nav-img' /></div></a>
             <a href='/jangbaguni' className='nav-item'><div className='n'><img src={require("../image/bag.png")} className='nav-img' /></div></a>
+            <a href='/login' className='nav-item'><div className='n'><img src={require("../image/key.png")} className='nav-img' /></div></a>
         </div>
     )
 }
