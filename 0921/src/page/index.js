@@ -13,5 +13,6 @@ import StoreiPhone from "./StoreiPhone";
 import StoreMac from "./StoreMac";
 import StoreTV from "./StoreTV";
 import StoreWatch from "./StoreWatch";
+import Freeboard from "./Freeboard";
 
-export { Dodbogi, Dokjum, Janbaguni, Kogaekjiwon, Main, Signin, Signup, Store, StoreAccessory, StoreAirpods, StoreiPad, StoreiPhone, StoreMac, StoreTV, StoreWatch }
+export { Dodbogi, Dokjum, Janbaguni, Kogaekjiwon, Main, Signin, Signup, Store, StoreAccessory, StoreAirpods, StoreiPad, StoreiPhone, StoreMac, StoreTV, StoreWatch, Freeboard }

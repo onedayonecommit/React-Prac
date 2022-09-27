@@ -14,6 +14,7 @@ function Nav() {
             <a href='/dokjum' className='nav-item'><div className='n'>Apple 독점 제공</div></a>
             <a href='/store/accessory' className='nav-item'><div className='n'>액세서리</div></a>
             <a href='/kogaekjiwon' className='nav-item'><div className='n'>고객지원</div></a>
+            <a href='/board' className='nav-item'><div className='n'>게시판</div></a>
             <a href='/dodbogi' className='nav-item'><div className='n'><img src={require("../image/dot2.png")} className='nav-img' /></div></a>
             <a href='/jangbaguni' className='nav-item'><div className='n'><img src={require("../image/bag.png")} className='nav-img' /></div></a>
             <a href='/login' className='nav-item'><div className='n'><img src={require("../image/key.png")} className='nav-img' /></div></a>
