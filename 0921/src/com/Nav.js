@@ -19,6 +19,7 @@ function Nav() {
             <a href='/jangbaguni' className='nav-item'><div className='n'><img src={require("../image/bag.png")} className='nav-img' /></div></a>
             <a href='/login' className='nav-item'><div className='n'><img src={require("../image/key.png")} className='nav-img' /></div></a>
         </div>
+        
     )
 }
 
