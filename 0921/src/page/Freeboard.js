@@ -1,46 +1,52 @@
-import React, { createElement, useEffect, useState } from 'react'
-import { Nav } from '../com'
+import React, { useEffect, useState } from 'react'
+import { Nav, Table } from '../com'
 import axios from 'axios'
+import { Link } from 'react-router-dom';
 const Freeboard = (props) => {
-    const [user, setUser] = useState(null);
+    // const [user, setUser] = useState([]);
+    const [board, setBoard] = useState([]);
     useEffect(() => {
-        async function User() {
-            await axios.get("http://localhost:3001/member").then((e) => {
-                setUser(e.data)
+        async function Board() {
+            await axios.get("http://localhost:3001/board").then((e) => {
+                setBoard(e.data)
             }).catch((error) => {
                 console.log(error)
             })
         }
-        User();
+        Board();
     }, [])
     useEffect(() => {
-        console.log(user)
-    }, [user])
-    // const tablemaker = () => {
-    //     for (let i = 0; i < user.length; i++) {
-    //         <tr>
-    //             <td className={i}>{user[i].id}</td>
-    //             <td className={i}>{user[i].user_id}</td>
-    //             <td className={i}>{user[i].pw}</td>
-    //         </tr>
-    //     }
-    // }
+        console.log(board)
+    }, [board])
+    function writing1() {
+        var titlearr = [];
+        var contentarr = [];
+        var useridarr = [];
+        var wnoarr = [];
+        for (let i = 0; i < board.length; i++) {
+            titlearr.push(<tr className='writing-title'>{board[i].title}</tr>)
+            contentarr.push(<tr className='writing-content'>{board[i].content}</tr>)
+            useridarr.push(<tr className='writing-userid'>{board[i].user_id}</tr>)
+            wnoarr.push(<tr className='writing-number'>{board[i].id}</tr>)
+        }
+        return (
+            [
+                wnoarr,
+                titlearr,
+                useridarr,
+                contentarr,
+            ]
+        )
+    }
+    console.log(writing1())
     return (
         <div>
             <Nav />
             <div className='table-box'>
-                <table className='posting-box'>
-                    <tr>
-                        <div className='write-number'>1</div>
-                        <div className='write-number'>2</div>
-                        <div className='write-number'>3</div>
-                        <div className='write-number'>4</div>
-                        <div className='write-number'>5</div>
-                    </tr>
-                </table>
+                <Table writing={writing1()} />
             </div>
             <div className='writing-btn'>
-                <button>글쓰기</button>
+                <Link to='/freeboard/create'><button>글쓰기</button></Link>
             </div>
         </div>
     )

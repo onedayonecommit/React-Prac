@@ -1,7 +1,6 @@
 import Dodbogi from "./Dodbogi";
 import Dokjum from "./Dokjum";
 import Janbaguni from "./Janbaguni";
-import Kogaekjiwon from "./Kogaekjiwon";
 import Main from "./Main";
 import Signin from "./Signin";
 import Signup from "./Signup";
@@ -14,5 +13,8 @@ import StoreMac from "./StoreMac";
 import StoreTV from "./StoreTV";
 import StoreWatch from "./StoreWatch";
 import Freeboard from "./Freeboard";
+import Writing from "./Writing";
+import Searchid from "./Searchid";
+import Mypage from "./Mypage";
 
-export { Dodbogi, Dokjum, Janbaguni, Kogaekjiwon, Main, Signin, Signup, Store, StoreAccessory, StoreAirpods, StoreiPad, StoreiPhone, StoreMac, StoreTV, StoreWatch, Freeboard }
+export { Dodbogi, Dokjum, Janbaguni, Main, Signin, Signup, Store, StoreAccessory, StoreAirpods, StoreiPad, StoreiPhone, StoreMac, StoreTV, StoreWatch, Freeboard, Writing, Searchid, Mypage }
