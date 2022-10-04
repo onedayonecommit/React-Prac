@@ -1,10 +1,11 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Footer, Nav } from '../com'
 
 const Signin = ({ logincheck, setLogincheck, setLoginid, loginid }) => {
+    const navigate = useNavigate();
     const [user, setUser] = useState([]);
     const [values, setValues] = useState({
         idinput: "",
@@ -41,7 +42,7 @@ const Signin = ({ logincheck, setLogincheck, setLoginid, loginid }) => {
                 setLogincheck(true)
                 alert("로그인 성공")
                 setLoginid(user[i].user_id)
-                return
+                return navigate("/")
             }
         } alert('id/pw 확인 바람')
     }

@@ -4,7 +4,8 @@ const StoreiPhone = () => {
     return (
         <div>
             <Nav />
-            StoreiPhone</div>
+            StoreiPhone
+        </div>
     )
 }
 

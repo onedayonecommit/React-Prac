@@ -33,10 +33,10 @@ const Writing = ({ user_id, }) => {
             <Nav />
             <div className='writing-body'>
                 <div className='title-div'><input className='title-input' id='titleinput' name='titleinput'
-                    onChange={onChangeWriting}
+                    onChange={onChangeWriting} placeholder="제목"
                 /></div>
                 <textarea className='content-textarea' id='contentarea' name='contentarea'
-                    onChange={onChangeWriting}
+                    onChange={onChangeWriting} placeholder="내용"
                 />
                 <button className='regist-content' onClick={sendPost}>작성</button>
             </div>
