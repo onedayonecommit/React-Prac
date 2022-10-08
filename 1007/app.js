@@ -17,3 +17,16 @@
 
 // 리액트에 설치
 // npm i redux react-redux redux-thunk react-router-dom axios styled-components
+
+function solution(price) {
+    if (price >= 500000) return Math.floor(price * 0.8)
+    else if (price >= 300000) return Math.floor(price * 0.9)
+    else if (price >= 100000) return Math.floor(price * 0.95)
+    else return Math.floor(price)
+}
+
+console.log(solution(500000))
+
+
+
+for (let i = 0; i <= 10; i++) console.log("hihi")
